@@ -1,2 +1,3 @@
-public interface Hunter {
+public interface Prey {
+    String getName();
 }

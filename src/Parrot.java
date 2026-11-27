@@ -1,9 +1,6 @@
+public class Giraffe extends Mammal implements Prey {
 
-public class Parrot extends Bird {
-
-    public Parrot(String name, int age, String specialFeature,
-                  int heightOfFly) {
-
-        super(name, age, specialFeature, heightOfFly);
+    public Giraffe(String name, int age, String specialFeature, int speed) {
+        super(name, age, specialFeature, speed);
     }
 }
