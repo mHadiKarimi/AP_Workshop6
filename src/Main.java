@@ -5,20 +5,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ArrayList<Animal> animals = new ArrayList<>();
+        Eagle eagle = new Eagle("Eagle", 8, "Excellent eyesight", 3000);
+        Cheetah cheetah = new Cheetah("Cheetah", 12, "The fastest", 120);
 
-        animals.add(new Eagle(
-                "Eagle", 8, "Excellent eyesight", 3000));
+        Parrot parrot = new Parrot("Parrot", 4, "Can imitate human speech", 500);
+        Giraffe giraffe = new Giraffe("Giraffe", 15, "The longest neck", 60);
 
-        animals.add(new Parrot(
-                "Parrot", 4, "Can imitate human speech", 500));
-
-        animals.add(new Cheetah(
-                "Cheetah", 12, "The fastest", 120));
-
-        animals.add(new Giraffe(
-                "Giraffe", 15, "The longest neck", 60));
-
+        eagle.hunt(parrot);
+        cheetah.hunt(giraffe);
 
         for (int i = 0; i < animals.size(); i++) {
 
